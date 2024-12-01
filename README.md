@@ -1,5 +1,6 @@
 # Умный подбор способа подписания документов
-
+## Ссылка на решение(на всякий случай): https://drive.google.com/file/d/1rLHRmjTNZp9WaqySzIEWk7oRbaBLvP8j/view?usp=drive_link
+## Видео: https://drive.google.com/file/d/1T-xVbjLs6xE-SA1LF144AuvYqiD4j8TC/view?usp=drive_link
 ## Общий README
 
 ### Описание
