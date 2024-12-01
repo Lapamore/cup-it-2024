@@ -7,9 +7,9 @@
    ```bash
    python --version
    ```
-2. Убедитесь, что PostgreSQL установлен. Если нет, выполните следующие шаги.
+## 2. Убедитесь, что PostgreSQL установлен. Если нет, выполните следующие шаги.
 
-### 2. Установка PostgreSQL (Linux)
+### Установка PostgreSQL (Linux)
 1. Установите PostgreSQL и сопутствующие пакеты:
    ```bash
    sudo apt install postgresql postgresql-contrib
@@ -101,4 +101,3 @@
 
 ### Swagger UI
 Для тестирования API откройте [http://localhost:8000/docs](http://localhost:8000/docs).
-```
