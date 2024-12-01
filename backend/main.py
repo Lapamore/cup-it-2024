@@ -69,7 +69,7 @@ def get_user_current_method(client_id: str):
         current_method = crud.get_user_current_method(db, client_id)
         if current_method is None:
             raise HTTPException(status_code=404, detail="User not found")
-        return {"method": current_method} 
+        return {"method": current_method}  # Возвращаем method вместо current_method
     except Exception as e:
         logger.error(f"Error getting method: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))

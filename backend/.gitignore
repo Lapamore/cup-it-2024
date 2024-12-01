@@ -4,3 +4,4 @@ backend/coverage/
 backend/logs/
 backend/*.log
 backend/.DS_Stor
+venv/

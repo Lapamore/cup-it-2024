@@ -34,12 +34,12 @@ npm --version
 2. Войдите, используя пароль, который вы задали при установке
 3. Создайте базу данных:
    - Правый клик на "Databases" -> Create -> Database
-   - Имя базы данных: `signature_db`
+   - Имя базы данных: `signing_db`
    - Нажмите Save
 
 4. Откройте файл `backend/database.py` и измените строку подключения:
 ```python
-SQLALCHEMY_DATABASE_URL = "postgresql://postgres:ВАШ_ПАРОЛЬ@localhost/signature_db"
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:ВАШ_ПАРОЛЬ@localhost/signing_db"
 ```
 Замените "ВАШ_ПАРОЛЬ" на пароль, который вы указали при установке PostgreSQL.
 
