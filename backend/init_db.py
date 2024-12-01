@@ -20,22 +20,24 @@ def init_db():
                 organizations=3,
                 current_method="SMS",
                 mobile_app=True,
-                signatures={
-                    "common": {
-                        "mobile": 3,
-                        "web": 10
-                    },
-                    "special": {
-                        "mobile": 5,
-                        "web": 6
-                    }
-                },
                 available_methods=["SMS", "PayControl", "КЭП на токене", "КЭП в приложении"],
                 claims=0
             )
             db.add(test_user)
             db.commit()
             print("Test user created successfully!")
+
+            # Создаем запись в таблице UserSignature
+            test_user_signature = models.UserSignature(
+                client_id="test_client",
+                common_mobile=3,
+                common_web=10,
+                special_mobile=5,
+                special_web=6
+            )
+            db.add(test_user_signature)
+            db.commit()
+            print("Test user signature created successfully!")
         else:
             print("Test user already exists!")
     finally:
